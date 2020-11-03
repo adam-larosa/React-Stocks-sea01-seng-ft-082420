@@ -33,6 +33,4 @@ const SearchBar = ({ radioButton, dropDown }) => {
     </div>
   );
 }
-
-
 export default SearchBar;
