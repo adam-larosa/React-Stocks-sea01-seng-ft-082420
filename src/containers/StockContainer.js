@@ -36,7 +36,6 @@ class StockContainer extends Component {
   }
 
   render() {
-    console.log(this.props.filtered)
     const { handleClick } = this.props
     return (
       <div>
