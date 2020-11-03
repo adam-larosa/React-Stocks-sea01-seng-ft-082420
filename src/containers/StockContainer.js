@@ -25,7 +25,6 @@ class StockContainer extends Component {
     if (radio === "Alphabetically") {
       return this.filterStocks().sort((a,b) => {
         if (a.name < b.name) {
-          console.log('derp')
           return -1
         }
         return 1
