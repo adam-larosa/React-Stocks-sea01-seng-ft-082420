@@ -1,5 +1,5 @@
 import React from 'react';
-const SearchBar = (props) => {
+const SearchBar = ({ radioButton, dropDown }) => {
   return (
     <div>
       <strong>Sort by:</strong>
@@ -8,7 +8,7 @@ const SearchBar = (props) => {
           type="radio" 
           value="Alphabetically" 
           checked={null} 
-          onChange={e => props.radioButton(e)}
+          onChange={e => radioButton(e)}
         />
         Alphabetically
       </label>
@@ -17,14 +17,14 @@ const SearchBar = (props) => {
           type="radio" 
           value="Price" 
           checked={null} 
-          onChange={e => props.radioButton(e)}
+          onChange={e => radioButton(e)}
         />
         Price
       </label>
       <br/>
       <label>
         <strong>Filter:</strong>
-        <select onChange={e => props.dropDown(e)}>
+        <select onChange={e => dropDown(e)}>
           <option value="Tech">Tech</option>
           <option value="Sportswear">Sportswear</option>
           <option value="Finance">Finance</option>
