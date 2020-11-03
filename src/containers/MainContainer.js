@@ -35,13 +35,13 @@ class MainContainer extends Component {
 	    })
 	}
 
-	dropDown = e => {
+	dropDown = filtered => {
 	    //e.persist()
-	    this.setState({filtered: e.target.value })
+	    this.setState({ filtered })
 	}
 
-	radioButton = e => {
-	    this.setState({radio: e.target.value})
+	radioButton = radio => {
+	    this.setState({ radio })
 	}
 
 	render() {

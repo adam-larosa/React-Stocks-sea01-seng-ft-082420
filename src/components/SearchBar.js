@@ -8,7 +8,7 @@ const SearchBar = ({ radioButton, dropDown }) => {
           type="radio" 
           value="Alphabetically" 
           checked={null} 
-          onChange={e => radioButton(e)}
+          onChange={e => radioButton(e.target.value)}
         />
         Alphabetically
       </label>
@@ -17,14 +17,14 @@ const SearchBar = ({ radioButton, dropDown }) => {
           type="radio" 
           value="Price" 
           checked={null} 
-          onChange={e => radioButton(e)}
+          onChange={e => radioButton(e.target.value)}
         />
         Price
       </label>
       <br/>
       <label>
         <strong>Filter:</strong>
-        <select onChange={e => dropDown(e)}>
+        <select onChange={e => dropDown(e.target.value)}>
           <option value="Tech">Tech</option>
           <option value="Sportswear">Sportswear</option>
           <option value="Finance">Finance</option>
