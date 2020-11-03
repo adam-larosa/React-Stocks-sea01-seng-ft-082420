@@ -1,7 +1,6 @@
 import React from 'react';
 import Stock from '../components/Stock'
-const PortfolioContainer = props => {
-  const { folio, removeClick } = props
+const PortfolioContainer = ({ folio, removeClick }) => {
   return (
     <div>
       <h2>My Portfolio</h2>
